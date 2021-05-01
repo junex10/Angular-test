@@ -1,0 +1,18 @@
+<app-nav-bar></app-nav-bar>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Activo</th>
+            <th scope="col">Info</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let indicator of indicators | ObjToArray">
+            <td>
+                <a class="text-decoration-none" [routerLink]="['/details', indicator.codigo]">
+                    {{indicator.nombre}} {{indicator.unidad_medida}}
+                </a>
+            </td>
+            <a class='text-decoration-none' [routerLink]="['/graphic', indicator.codigo]">i</a>
+        </tr>
+    </tbody>

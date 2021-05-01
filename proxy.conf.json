@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://mindicador.cl",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

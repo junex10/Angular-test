@@ -1,0 +1,10 @@
+<app-nav-bar></app-nav-bar>
+<div style='margin:40px' class='datos_primarios'>
+  <h3 style='color: blue'>
+    ${{lastPrice}}
+  </h3>  
+  Nombre: <p id='nombre'>{{ nombre }}</p>
+  Fecha: <p id='fecha'>{{ fecha }}</p>
+  Unidad de Medida: <p id='um'>Pesos</p>
+</div>
+<div echarts [options]="chartOption" class="demo-chart"></div>
